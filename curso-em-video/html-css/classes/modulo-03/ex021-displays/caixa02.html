@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+
+        header{
+            display: flex;
+            background-color: antiquewhite;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            flex-direction: row;
+            align-items: center;
+            gap: 32px;
+            justify-content: space-around;
+            border-radius: 30px 0px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
+
+        }
+
+        nav{
+            background-color: rgba(146, 146, 133, 0.247);
+            padding: 3px;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.37);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: darkred;
+            font-weight: 600;
+            margin-right:20px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        main{
+            background-color: antiquewhite;
+            padding: 15px;
+            margin: 10px;
+            text-align: justify;
+            border-radius: 30px 0px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
+
+        }
+
+        article > aside{
+            color: rgb(155, 140, 140);
+            text-align: right
+        }
+
+        footer{
+            background-color: antiquewhite;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            font-weight: 600;
+            border-radius: 30px 0px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
+        }
+
+        
+    </style>
+
+</head>
+<body>
+
+    <header>
+
+        <h1>Meu Site</h1>
+
+        <nav>     
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="asssuntos">
+
+            <article>
+                <h2>Esportes fora do Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, in! Neque ratione quam maiores, minima error eos cumque magni earum architecto alias ea illo aspernatur sapiente repellat. Qui, facilis optio.</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, in! Neque ratione quam maiores, minima error eos cumque magni earum architecto alias ea illo aspernatur sapiente repellat. Qui, facilis optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, in! Neque ratione quam maiores, minima error eos cumque magni earum architecto alias ea illo aspernatur sapiente repellat. Qui, facilis optio.</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, in! Neque ratione quam maiores, minima error eos cumque magni earum architecto alias ea illo aspernatur sapiente repellat. Qui, facilis optio.</p>
+
+                    <aside>
+                        <p>Artigo escrito por Thiago Marechal</p>
+                    </aside>
+
+            </article>
+
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, in! Neque ratione quam maiores, minima error eos cumque magni earum architecto alias ea illo aspernatur sapiente repellat. Qui, facilis optio.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas saepe delectus dolores vero nulla laborum illo ut doloremque cum, provident magnam non ipsa explicabo labore quam quasi omnis maxime nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore non aliquam quas quidem dolor tempore cum harum a, delectus alias quibusdam! Vitae hic, minus dolor voluptas inventore aliquid officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aspernatur mollitia, quisquam molestiae expedita et accusantium ab eum ex atque iusto eius! Error vitae obcaecati minus! Provident commodi a nesciunt.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque deleniti accusantium perferendis earum natus? Animi saepe nulla eius officiis voluptate repudiandae consectetur inventore expedita architecto porro mollitia, ex magnam accusantium.</p>
+
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+
+            </article>
+
+        </section>
+
+    </main>
+    
+    <footer>
+        <article>
+            Desenvolvido pelo CursoEmVídeo
+        </article>
+    </footer>
+
+    <div id="bola"></div>
+
+</body>
+</html>

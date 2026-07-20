@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+thead th{
+    background-color: gray;
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+tbody th{
+    border: 1px solid black;
+    padding: 10px;
+
+}
+
+tbody td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+td.disciplina{
+    text-align: left;
+}
+
+th.disciplina{
+    text-align: left;
+}
+
+tr.media{
+    background-color: gray;
+    color: white;
+}
