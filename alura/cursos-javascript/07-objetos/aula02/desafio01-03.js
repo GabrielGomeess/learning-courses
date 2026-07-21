@@ -28,3 +28,54 @@ function mostrarInfoPessoa(pessoa) {
 }
 
 mostrarInfoPessoa(pessoa)
+
+
+console.log('-----------------');
+console.log('Exercício - 03');
+
+const pessoas = [
+    pessoaUm = {
+        nome: 'Gabriel',
+        idade: 22,
+        cidade: 'São Paulo'
+    },
+
+    pessoaDois = {
+        nome: 'Fatima',
+        idade: 42,
+        cidade: 'São Paulo'
+    },
+
+    pessoaTres = {
+        nome: 'Peter Parker',
+        idade: 25,
+        cidade: 'Bronks'
+    }
+
+]
+
+function mostrarListaPessoas(pessoas) {
+    console.log(pessoas)
+}
+
+pessoas.push(
+    pessoaQuatro = {
+        nome: 'Michael Scofield',
+        idade: 38,
+        cidade: 'Illinois'
+    }
+)
+
+mostrarListaPessoas(pessoas);
+
+function filtrarPorCidade(pessoas, cidade) {
+    
+    return pessoas.filter(pessoa => pessoa.cidade === cidade)
+
+}
+
+const paulistas = filtrarPorCidade(pessoas, 'São Paulo');
+console.log(paulistas)
+
+
+
