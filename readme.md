@@ -1,12 +1,12 @@
 
 
-  # 📚 Learning Courses
+  # Learning Courses
 
   > A collection of lessons and exercises completed while following courses and tutorials as part of my Web Development learning journey.
 
   ---
 
-  ## 📖 Platforms
+  ## Platforms
 
   - [Alura](./alura/)
   - [Curso em Vídeo](./curso-em-video/)
@@ -15,7 +15,7 @@
 
   ---
 
-  ## 🚀 Technologies
+  ## Technologies
 
   <p>
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
@@ -28,16 +28,16 @@
 
   ---
 
-  ## 🎯 Purpose
+  ## Purpose
 
   This repository serves as a personal archive of my studies.
 
       Here you'll find:
 
-      - 📝 Notes
-      - 📚 Course exercises
-      - 💻 Small projects
-      - 🧩 Coding challenges
-      - 📖 Practice materials
+      - Notes
+      - Course exercises
+      - Small projects
+      - Coding challenges
+      - Practice materials
 
   Everything is organized by learning platform to make it easier to revisit concepts and track my progress over time.
