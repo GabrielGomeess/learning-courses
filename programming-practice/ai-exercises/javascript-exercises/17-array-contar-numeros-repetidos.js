@@ -2,7 +2,7 @@
 
 // - Recebo um array
 // - Crio uma variavel que acumula a quantidade
-    // caramba estava pensando aqui essa vai ser treta, pq preciso comparar todos os numeros com todos
+// caramba estava pensando aqui essa vai ser treta, pq preciso comparar todos os numeros com todos
 // - Percorro o array
 // - Faço uma condicional que verifica se o numero do indice atual é igual à algum outro do array
 // - Imprimo no console
@@ -44,7 +44,6 @@
 // ou seja, não é a alternativa, acho q nem ela daria
 
 // e se eu colocar a incrementação após o if porém dentro do for
-
 
 // ------------- 2° TENTATIVA ---------------------------
 
@@ -105,8 +104,7 @@
         verificaRepeticaoNoArray(numeros);
 
 
-*/        
-
+*/
 
 // ------------- 2° TENTATIVA ---------------------------
 
@@ -138,46 +136,67 @@
         verificaRepeticaoNoArray(numeros);
 */
 
+/*
+
+        let numeros = [4, 7, 10, 3, 7, 11, 6];
+
+        function verificaRepeticaoNoArray(numeros) {
+        let qtdDeRepeticoes = 0;
+
+        for (let indice = 0; indice < numeros.length; indice++) {
+            // ESSE FOR PERCORRE O ARRAY NORMAL DO 4 PRO 7 PRO 10 e assim em diante
+
+            // FOR que começa a partir do 7 (2° elemento)
+            // Ahhhh, entendi agora toda vez que o for externo avança o interno vai ser o indice externo+1
+            for (
+            let proximoIndice = indice + 1;
+            proximoIndice < numeros.length;
+            proximoIndice++
+            ) {
+            // Pra mim faz sentido o if ser aqui pois acessa os dois indices
+            // Ou seja, toda vez que o num que estiver no indice for igual ao num que ta no proximoIndice ele incrementa na variavel
+            if (numeros[indice] === numeros[proximoIndice]) {
+                qtdDeRepeticoes++;
+            }
+
+            console.log(
+                `Comparando ${numeros[indice]} com ${numeros[proximoIndice]}`,
+            );
+            // console.log(`Há pelo menos ${qtdDeRepeticoes} repetição.`); se for aqui aparece apos cada comparação 4 com 7 (log), 4 com 10 (log)
+            }
+
+            // console.log(`Há pelo menos ${qtdDeRepeticoes} repetição.`); se for aqui aparece a depois de todas as comparações do 4, depois as do 7...
+        }
+
+        console.log(`Há pelo menos ${qtdDeRepeticoes} repetição.`);
+        }
+
+        verificaRepeticaoNoArray(numeros);
+
+*/
 
 let numeros = [4, 7, 10, 3, 7, 11, 6];
 
 function verificaRepeticaoNoArray(numeros) {
-    let qtdDeRepeticoes = 0;
+  let qtdDeRepeticoes = 0;
 
-    for (let indice = 0; indice < numeros.length; indice++) { // ESSE FOR PERCORRE O ARRAY NORMAL DO 4 PRO 7 PRO 10 e assim em diante
-
-        for (let proximoIndice = 1; proximoIndice < numeros.length; proximoIndice++) { // FOR que começa a partir do 7 (2° elemento) 
-            
-            // // Pra mim faz mais sentido a comparação ser feita dentro do laço interno que esta dentro do laço externo
-            // if (numeros[indice] == numeros[proximoIndice]) { 
-            //     qtdDeRepeticoes++;
-            // }
-
-            // Aqui ele está comparan;do
-                // Comparando 4 com 7
-                // Comparando 4 com 10
-                // Comparando 4 com 3
-                // Comparando 4 com 7
-                // Comparando 4 com 11
-                // Comparando 4 com 6
-                // Comparando 7 com 7
-                // Comparando 7 com 10
-                // Comparando 7 com 3
-                // Comparando 7 com 7
-                // Comparando 7 com 11
-                // Comparando 7 com 6
-                // Comparando 10 com 7 --- ISSO TA ERRADO, JÁ FOI COMPARADO
-                // Comparando 10 com 10 --- ISSO TA ERRADO, JÁ FOI COMPARADO
-                // Comparando 10 com 3
-                // Comparando 10 com 7
-                // Comparando 10 com 11
-                // Comparando 10 com 6
-            console.log(`Comparando ${numeros[indice]} com ${numeros[proximoIndice]}`)
-
-        }
-        
+  for (let indice = 0; indice < numeros.length; indice++) {
+    for (
+      let proximoIndice = indice + 1;
+      proximoIndice < numeros.length;
+      proximoIndice++
+    ) {
+      if (numeros[indice] === numeros[proximoIndice]) {
+        qtdDeRepeticoes++;
+      }
     }
-    
+  }
+
+  if (qtdDeRepeticoes > 0) {
+    console.log(`Há pelo menos ${qtdDeRepeticoes} repetição!`);
+  } else {
+    console.log(`Não números repetidos!`);
+  }
 }
 
 verificaRepeticaoNoArray(numeros);
