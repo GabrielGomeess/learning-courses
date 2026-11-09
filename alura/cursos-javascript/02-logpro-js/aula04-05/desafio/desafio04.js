@@ -113,19 +113,19 @@ let numeroAleatorio = Math.random()
 console.log(numeroAleatorio)
 
 
-//Exercicio 11
+//Exercicio 12
 console.log('--------------')
-console.log('EXERCICIO - 11')
+console.log('EXERCICIO - 12')
 
 let numeroAleatorio1a10 = parseInt(Math.random() * 10 + 1)
 
 console.log(numeroAleatorio1a10)
 
 
-//Exercicio 12
+//Exercicio 13
 console.log('--------------')
-console.log('EXERCICIO - 12')
+console.log('EXERCICIO - 13')
 
-let numeroAleatorio1a100 = parseInt(Math.random() * 100 + 1)
+let numeroAleatorio1a1000 = parseInt(Math.random() * 1000 + 1)
 
-console.log(numeroAleatorio1a100)
+console.log(numeroAleatorio1a1000)
