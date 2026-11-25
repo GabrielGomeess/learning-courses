@@ -1,3 +1,5 @@
+// CONSUMO ELÉTRICO
+
 //  O sistema deve calcular o consumo mensal estimado com base no uso diário, classificar o consumo (baixo, moderado ou alto) e exibir uma mensagem clara para o usuário.
 
 // Sua missão é criar três funções separadas, com responsabilidades bem definidas:
